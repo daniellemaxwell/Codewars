@@ -17,5 +17,5 @@ Examples
 "####################################man!" */
 
 function maskify(cc) {
-    return cc.slice(0, cc.length - 4).replace(/./g, '#') + cc.slice(cc.length - 4)
+     return (cc.length > 4) ? cc.slice(0, cc.length - 4).replace(/./g, '#') + cc.slice(cc.length - 4) : cc
 }
